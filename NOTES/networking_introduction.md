@@ -71,3 +71,7 @@ To communicate between computers:
 
 ## Diagram
 <img width="1443" height="782" alt="image" src="https://github.com/user-attachments/assets/cb912d16-983a-45c2-a0cd-9da9dbe473b8" />
+
+## Diagram - Communication between 2 programs over the network
+<img width="3568" height="4172" alt="02-AUG-2021-PROG" src="https://github.com/user-attachments/assets/d35e8339-8518-44a8-98a2-da10340ab33b" />
+
