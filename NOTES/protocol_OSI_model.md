@@ -148,3 +148,112 @@ All mail servers are designed based on these protocols, enabling users to send a
 
 ### Diagram - 2: OSI Model - Application Layer Protocol
 <img width="3568" height="4172" alt="07-AUG-2021-MAIL-PROTOCOLS" src="https://github.com/user-attachments/assets/8200e550-0190-4dca-9c1c-1b288de83c8c" />
+
+# Application Protocol
+
+Any two network applications that want to exchange data over a network must define a **standard message structure and semantics**. This ensures both applications can follow consistent rules and communicate in an understandable format. This is called an **Application Protocol**.
+
+---
+
+## Common Internet Applications & Protocols
+
+In the internet world, many applications support our daily activities:
+
+### 1. Web Browsing
+- **HTTP (HyperText Transfer Protocol)**  
+  Standard protocol used for accessing web pages over the World Wide Web.
+
+---
+
+### 2. Email Communication
+Multiple protocols are used for email exchange between client and server:
+- **SMTP (Simple Mail Transfer Protocol)** – Initial protocol with fewer features (used for sending emails)
+- **POP3 (Post Office Protocol v3)** – Used to retrieve emails (downloads emails locally)
+- **IMAP (Internet Message Access Protocol)** – Advanced protocol (syncs emails across devices)
+
+---
+
+### 3. File Transfer
+- **FTP (File Transfer Protocol)** – Used to transfer files between a client and a server.
+
+---
+
+### 4. Remote Desktop Access
+- **RDP (Remote Desktop Protocol)** – Used to connect and control another computer over a network.
+
+---
+
+## Standard Ports for Common Protocols
+
+To ensure interoperability and ease of access, standard port numbers are predefined:
+
+| Protocol | Port Number |
+|----------|------------|
+| FTP      | 20 / 21    |
+| SSH      | 22         |
+| SMTP     | 25         |
+| HTTP     | 80         |
+| HTTPS    | 443        |
+| POP3     | 110        |
+| IMAP     | 143        |
+| RDP      | 3389       |
+
+---
+
+## Client-Server Communication
+
+Any two programs communicating over a network must follow a standard application protocol.
+
+### Types of Programs:
+- **Server Program**
+  - Runs on a specific port number
+- **Client Program**
+  - Connects to the server using `IP:Port`
+
+---
+
+## Why Application Protocols Are Needed
+
+Different programs:
+- Exchange different types of data
+- Perform different operations
+
+Therefore, each pair of communicating programs must define their own protocol. However, for commonly used applications, **standard protocols** are defined to ensure compatibility across vendors and platforms.
+
+---
+
+## Common Applications with Default Ports
+
+- Web Browsing → HTTP (80)  
+- Email:
+  - SMTP (25)
+  - POP3 (110)
+  - IMAP (143)
+- File Transfer → FTP (20/21)  
+- Remote Desktop → RDP (3389)
+
+---
+
+## URL Format
+
+To communicate with a server, the client uses a **URL**:
+
+```
+
+schema://ip:port/resource
+
+```
+
+### Components:
+- **schema** → Protocol used (e.g., HTTP, FTP)
+- **ip** → Server IP address
+- **port** → Port number where the server is running
+- **resource** → Specific resource on the server
+
+### Note:
+The client determines how to structure messages based on the **schema (protocol)** and sends them accordingly to the server.
+
+
+### Diagram - Application Protocol
+<img width="3568" height="4172" alt="09-AUG-2021-APP-PROTOCOLS" src="https://github.com/user-attachments/assets/6ce589ce-f14c-43b3-a400-72b55a4c0b30" />
+
