@@ -129,9 +129,11 @@ IP addresses are always treated as **unsigned values**.
   - Maximum usable range  
   - Proper identification of devices  
 
-```
 
 
 ## Diagram - IP-Addressing
 <img width="3568" height="4172" alt="27-AUG-2021-IPADDRESSING" src="https://github.com/user-attachments/assets/6d888335-aa6c-417e-91fe-6bbc88bd0aaa" />
+
+## Diagram - IP-Addressing - divided hirachical 
+<img width="3660" height="5764" alt="30-AUG-2021" src="https://github.com/user-attachments/assets/92342c98-9ad1-4e5d-b965-a0b157093e48" />
 
