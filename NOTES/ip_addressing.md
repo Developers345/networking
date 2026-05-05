@@ -380,3 +380,71 @@ These classes define:
 | Usage         | Small networks, ARP | Streaming, group communication |
 
 
+## 🔢 Total Addresses: `2^8 = 256`
+
+When you allocate **8 bits for the host portion** of an IP address:
+
+* Each bit can be **0 or 1**
+* Total combinations = **2⁸ = 256**
+
+👉 So, you get **256 total IP addresses** in that network.
+
+---
+
+## ⚠️ Why Only 254 Usable Hosts?
+
+Out of those 256 addresses, **2 are reserved** and **cannot be assigned to devices**.
+
+### 1. Network Address (First Address)
+
+* All host bits = `0`
+* Identifies the **network itself**
+* Example: `192.168.1.0`
+
+👉 Used by routers to identify the network
+❌ Cannot assign to a computer
+
+---
+
+### 2. Broadcast Address (Last Address)
+
+* All host bits = `1`
+
+* Used to send data to **all devices in the network**
+
+* Example: `192.168.1.255`
+
+👉 Sends message to everyone
+❌ Cannot assign to a computer
+
+---
+
+## 🧮 Final Calculation
+
+* Total addresses = **256**
+* Reserved:
+
+  * 1 Network address
+  * 1 Broadcast address
+
+👉 **256 - 2 = 254 usable host addresses**
+
+---
+
+## 📊 Example
+
+| Type              | Address                     |
+| ----------------- | --------------------------- |
+| Network Address   | 192.168.1.0                 |
+| Usable Hosts      | 192.168.1.1 – 192.168.1.254 |
+| Broadcast Address | 192.168.1.255               |
+
+---
+
+## 🧠 Simple Way to Remember
+
+* First address → Network
+* Last address → Broadcast
+* Everything in between → Usable hosts
+
+
