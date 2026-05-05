@@ -48,7 +48,76 @@ To determine the class of an IP address:
 - **127.x.x.x** → Loopback address  
   - Used for a system to communicate with itself
 
+
+# IP Address Assignment Methods
+
+IP addresses can be assigned to computers in two ways:
+
+1. **Static IP**
+2. **Dynamic IP**
+
 ---
+
+## 1. Static IP Binding
+
+If there are **fewer computers** in a network, the network administrator can manually configure each system.
+
+### Configuration includes:
+- IP Address  
+- Subnet Mask  
+- Default Gateway  
+- DNS Settings  
+
+### Key Points:
+- Configuration is done manually on each system
+- The IP address **remains the same even after reboot**
+- Suitable for small networks or critical devices (e.g., servers)
+
+---
+
+## 2. Dynamic IP Binding
+
+In large organizations, there are **many computers** connected to the network. Manually configuring each system is impractical.
+
+To solve this, network administrators use a **DHCP server**.
+
+---
+
+## Dynamic Host Configuration Protocol (DHCP)
+
+**DHCP (Dynamic Host Configuration Protocol)** automates IP address assignment.
+
+### Administrator Configures:
+- IP address range (pool)
+- IP reservations (optional)
+- Default gateway
+- DNS server details
+
+### How it Works:
+- When a new host joins the network, it requests an IP
+- The DHCP server automatically assigns:
+  - IP address  
+  - Subnet mask  
+  - Gateway  
+  - DNS  
+
+### Key Points:
+- Reduces manual effort
+- Minimizes configuration errors
+- Ideal for large-scale networks
+
+---
+
+## Summary
+
+| Feature        | Static IP              | Dynamic IP (DHCP)       |
+|----------------|-----------------------|--------------------------|
+| Configuration  | Manual                | Automatic               |
+| IP Persistence | Fixed                 | Changes (unless reserved)|
+| Use Case       | Small networks/servers| Large networks          |
+
+## Diagram - DHCP Server
+<img width="3568" height="4172" alt="02-SEP-2021-DHCP" src="https://github.com/user-attachments/assets/b3312fae-4732-44c6-80c7-9b89a54b9b79" />
 
 ## Host Calculation Example
 
@@ -183,4 +252,6 @@ Result → **Network Address**
 
 ## Diagram - Subnet Mask
 <img width="3568" height="4172" alt="01-SEP-2021-SUBNETMASK" src="https://github.com/user-attachments/assets/19dd0689-23b0-405e-9c16-6cb5bae3c560" />
+
+
 
