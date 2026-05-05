@@ -308,3 +308,75 @@ These classes define:
 ## Diagram - Classifcation of IP Addressing
 <img width="3568" height="4172" alt="31-AUG-2021-IPCLASSES" src="https://github.com/user-attachments/assets/622fd037-cca9-42f8-b79d-78ba6c5c3a04" />
 
+## 📡 Broadcast vs Multicast
+
+### 📢 Broadcast Communication
+
+![Image](https://images.openai.com/static-rsc-4/Jns7MJAWRVhC7GfmvNway7xcT4ysLimpjiAMixFUPmeqq2V8D8WPG4B9je7ky3DxUkwEqNgpYundCs4RfL-qDIHAsrlP5pHkufOLZHTQW9sh7DmTh30Yz-Dsx1nfnqJ_XbtkeUi47--y1bhQgdBj_DXKIIaByj7iCEVeIetKr-QszkR7gl-FJR9JW-HxnBkA?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/7tyNM0YXC1sJ6cIBFDgcitVfxebQwtktAFvoYVqQiwMNSO2xRHAXqj_H4zdX12DssqHYY7OXLgJwnl7A0V1oC9ntFbj7MY0GBjrnAZO6E593MLU40tPxXCZLn5xcX6gbSEC3nQ1IhgHIwJaxZQ9-8K4aJgrj_ll_3deKBtIWSrcA4TwAhkpww4UzTV0UO-zi?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/u2Csm4SqpjUBroX_-1FngVjJmuXv6sWgPzBL0OGs4VYfgvjQCnSrPwH4N9vEDLRNe2j-d6PFQ5hAYTnBnkpUV3YbpKv1a5Qa86J9ukHQ_7GNLfoSyTcb1OjbSpzeXElqo60I6WUg-SP37gafbZTUzMbt043Ig5edLBCMvjXfrcL0DwBIMbjd1Zi5jz1yip2W?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/FIW8JUrKlQuoDJ_v_JUd05FS6CDDeDH5WHahVJNB2mdTeaeG3O5z72TgBxuZCV9YY1GHCpRoHYfQhXW_i-N_-HlsMbGf6xBvghew9_i-yUybJrfpZJo1eV-yVLKqoVz19jPQl7oxJEIrtffBRqM5Id1TDbNyb4RPYRdxXIjDyBFA_mJtRWL5loe3DNLYfqfY?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/6Wcc41NmDwp9-vCuF23zlGXS86idyps2U2sXKdcDKsjsc8eQ2PPy06YhY3NQzwiWMulmSnZCuu_ZiG2cfbSubaCqhx6djENBVKiWcI3gYTup97iI-Ws-LlcagSABTD4eHWEwTczFtageUcaHQkXQqNc-LVvTJ7Ec823ShuIxJyIWe74rGHxOY4dhrTMOosBJ?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/463c3y--edq732ykkAryDgrvBu9duxq_jQQ-Ge2Nhp7s8qNndH-fsVoDauje0k-8PDXq5_SXqg1nUmd0GSE_COvZYRliTfiyB23CU6rcLSDdPr4lMvp4q6fYKLMW9s0i_H9MBzINR6Od3pQHiBY5o4ChJrvvHMTOOHTkELH5jNttN4friXOGMOS5UT0RdtPM?purpose=fullsize)
+
+**Broadcast** means sending data from **one device to all devices** in the same network.
+
+### Key Points
+
+* One sender → **All receivers**
+* Uses special address: **255.255.255.255** (IPv4 broadcast)
+* Every device in the network **receives and processes** the packet
+* Works only within a **local network (LAN)**
+
+### Example
+
+* ARP (Address Resolution Protocol) request
+* “Who has this IP?” message sent to all devices
+
+---
+
+### 👥 Multicast Communication
+
+![Image](https://images.openai.com/static-rsc-4/TbUU4jUVVYnQzbwrJrXtZqudIuG6fYzqmRW5hsOHqGOe1DMSX0sjKZuovHsw14P6x0SVOmOJ3DC7ThWshk5Yd7wfaXDXK61BsQSD1jYbpYGYItOkTUyB-EiuFH-eWkpYNjgsXieIdZxBSx_vhfSOh0jCvgkKbJ8iwmZZ4dePikIRqOBl5kagjKVWxHG-A1um?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/khBNCxX3je9VZrJhMVzf4bnSHwpsznP1cXRwhFvbPgbFWcrJFUzWkW5ERJyVJhHhpzsTJ5_ELtU8vbZmqw9d0U2Y2eCMvPsvorTemqfVXDDx5Oo_ilOdJ_D7711gPFRW-7AX1XmmuEfw_gmOek2fVCdCAm7Z70DMF7Yj1gg4Z687mdvBqYU9vzVVddsrKcZk?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/7tyNM0YXC1sJ6cIBFDgcitVfxebQwtktAFvoYVqQiwMNSO2xRHAXqj_H4zdX12DssqHYY7OXLgJwnl7A0V1oC9ntFbj7MY0GBjrnAZO6E593MLU40tPxXCZLn5xcX6gbSEC3nQ1IhgHIwJaxZQ9-8K4aJgrj_ll_3deKBtIWSrcA4TwAhkpww4UzTV0UO-zi?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/H2DEfZ4RXq_M24H0BSxH7cyrB6o2J5PDymhPZJdkEFmIAU6Dlkl5v3acOPxi_RHx_IVcKeSKihb0Iv_i_Ma48bwrPcjaA5199ZZJaBAzknak1KYm-Zq3W2TIDEPOLAWeo_fJFEpSvV41UWPetmC1hLqi3MUe9EAAjuOak1inhutdsifz5wACAdjNQg6d2GrM?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/az4wuKEjySIwycqz-_hebT4aJ9q6nVCxP6Ds14l7XCW6WbhNjv3FajtSHdHmD8XDlhqDx8RlmY-nb4gb_QmM37el6AOh39MZbJN9QvKMX0zx7I1vGQuvct9CAmNdOtdXi-wzvdl9wwR5D8mmLZcMR2g9sybDo7sR05uSV23Anzpq4a44-7nV9KflkXvNf2wI?purpose=fullsize)
+
+**Multicast** means sending data from **one device to a selected group of devices**.
+
+### Key Points
+
+* One sender → **Specific group of receivers**
+* Uses IP range: **224.0.0.0 to 239.255.255.255**
+* Only devices that **join the group** receive the data
+* Efficient — avoids unnecessary traffic
+
+### Example
+
+* Live video streaming
+* Online gaming updates
+* Stock market data distribution
+
+---
+
+## ⚖️ Difference Between Broadcast and Multicast
+
+| Feature       | Broadcast           | Multicast                      |
+| ------------- | ------------------- | ------------------------------ |
+| Communication | One → All           | One → Selected group           |
+| Efficiency    | Less efficient      | More efficient                 |
+| Network load  | High                | Low                            |
+| IP Range      | 255.255.255.255     | 224.0.0.0 – 239.255.255.255    |
+| Usage         | Small networks, ARP | Streaming, group communication |
+
+
