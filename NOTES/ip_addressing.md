@@ -137,3 +137,174 @@ IP addresses are always treated as **unsigned values**.
 ## Diagram - IP-Addressing - divided hirachical 
 <img width="3660" height="5764" alt="30-AUG-2021" src="https://github.com/user-attachments/assets/92342c98-9ad1-4e5d-b965-a0b157093e48" />
 
+# IP Addressing
+
+## Types of IP Addresses
+There are **two types of IP addresses**:
+
+1. **IPv4**
+   - 32-bit in length  
+   - Can accommodate approximately **4.2 billion devices**  
+
+2. **IPv6**
+   - 128-bit in length  
+   - Written in **hexadecimal format**  
+   - Can accommodate **2^128 - 2 addresses**, which is practically unlimited  
+
+---
+
+# IPv4 Addressing
+
+## Structure
+An IPv4 address is:
+- **32 bits long**
+- Divided into **4 octets (each 8 bits)**
+- Separated by a dot (`.`)
+
+Example:
+```
+
+192.168.1.1
+
+```
+
+---
+
+## Hierarchical Addressing Model
+IPv4 uses a **hierarchical addressing model** to organize networks efficiently.
+
+We group related computers into a **network**, and manage each network separately.
+
+An IP address consists of two parts:
+
+### 1. Network Address
+- Identifies the **network/group of computers**
+- Formed using a portion of the IP address (some bits or octets)
+
+### 2. Host Address
+- Identifies a **specific computer within a network**
+- Assigned as a unique number within that network
+
+---
+
+## Example: Network and Host Split
+
+If:
+- **3 octets** are used for the network  
+- **1 octet** is used for hosts  
+
+### Hosts per Network
+```
+
+2^8 = 256 addresses
+Usable hosts = 254 (excluding network and broadcast)
+
+```
+
+### Number of Networks
+```
+
+255 × 255 × 255 networks
+
+```
+
+---
+
+## Organizational Example
+
+Suppose an organization wants to create **3 separate networks**:
+
+- Finance Department → One network  
+- HR Department → Another network  
+- Employees → Separate network  
+
+### Purpose
+- Apply **security and traffic restrictions**
+- Control access between departments
+
+### Example Policies
+- Finance → No access to public internet (confidentiality)  
+- Finance & HR → Access to employee data  
+- Employees → Limited internet access  
+
+---
+
+## Example IP Allocation
+
+| Network Address | Host Range | Department |
+|---------------|-----------|------------|
+| 192.168.1.x   | 1–254     | Finance    |
+| 192.168.2.x   | 1–254     | HR         |
+| 192.168.3.x   | 1–254     | Employees  |
+
+---
+
+## Key Concept: Host Capacity
+
+Number of hosts depends on how many bits are allocated:
+
+- **More network bits → More networks, fewer hosts**
+- **More host bits → Fewer networks, more hosts**
+
+---
+
+## Example: Large Organization
+
+If an organization has **3000 employees**:
+
+- Use **2 octets for network**
+- Use **2 octets for hosts**
+
+### Result:
+- Networks: ~65,000  
+- Hosts per network: ~65,000  
+
+---
+
+## Problem: Identifying Network vs Host
+
+Given an IP:
+```
+
+192.168.1.2
+
+```
+
+👉 Can we identify:
+- Network address?
+- Host address?
+
+❌ **No**, because:
+- Bit allocation is **not fixed**
+
+---
+
+## Solution: Classful IP Addressing
+
+To solve this, **IP classes** were introduced.
+
+### Classes of IP Addresses
+There are **5 classes**:
+
+- Class A  
+- Class B  
+- Class C  
+- Class D  
+- Class E  
+
+These classes define:
+- Which bits belong to the **network**
+- Which bits belong to the **host**
+
+---
+
+## Conclusion
+- IPv4 uses a **hierarchical structure**
+- IP address = **Network + Host**
+- Allocation depends on **network size**
+- Classful addressing helps identify structure easily
+
+
+## Diagram - Classifcation of IP Addressing
+<img width="3568" height="4172" alt="31-AUG-2021-IPCLASSES" src="https://github.com/user-attachments/assets/622fd037-cca9-42f8-b79d-78ba6c5c3a04" />
+
